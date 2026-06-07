@@ -36,9 +36,9 @@ class TopKStyleAcausalCrosscoderTrainer(
                 **self._get_fvu_dict(batch_BMPD, train_res.recon_acts_BMPD),
             }
 
-            return reconstruction_loss, log_dict
+            return loss, log_dict
 
-        return reconstruction_loss, None
+        return loss, None
 
     def aux_loss(
         self, batch_BMPD: torch.Tensor, train_res: ModelHookpointAcausalCrosscoder.ForwardResult
