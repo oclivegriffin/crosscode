@@ -358,7 +358,7 @@ requires-dist = [
     { name = "torch" },
     { name = "torchvision" },
     { name = "tqdm" },
-    { name = "transformer-lens" },
+    { name = "transformer-lens", specifier = "<4" },
     { name = "transformers" },
     { name = "wandb" },
     { name = "zstandard" },
