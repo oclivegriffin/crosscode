@@ -14,7 +14,7 @@ dependencies = [
     "pytest",
     "ipykernel",
     "einops",
-    "transformer_lens",
+    "transformer_lens<4",
     "transformers",
     "datasets",
     "plotly",
